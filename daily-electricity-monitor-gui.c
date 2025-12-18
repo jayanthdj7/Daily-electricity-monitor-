@@ -142,7 +142,7 @@ static void view_bill_clicked(GtkWidget *widget, gpointer data) {
         char buffer[500];
         snprintf(buffer, sizeof(buffer), 
                  "Wow, consumption is within the daily limit.\n"
-                 "Congradulations, you are from charges!\n"
+                 "Congratulations, you are exempt from charges!\n"
                  "KEEP IT UP!!\n"
                  "Net Payable Today: ₹0.00%s", 
                  tips);
