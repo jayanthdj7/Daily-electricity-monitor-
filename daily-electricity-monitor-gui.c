@@ -187,7 +187,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     app_data->name_entry = gtk_entry_new();
     app_data->power_entry = gtk_entry_new();
     btn_log_1 = gtk_button_new_with_label("Log Specs");
-    gtk_grid_attach(GTK_GRID(app_data->setup_grid), gtk_label_new("Name:"), 0, 0, 1, 1);
+    gtk_grid_attach(GTK_GRID(app_data->setup_grid), gtk_label_new("Name (acronym):"), 0, 0, 1, 1);
     gtk_grid_attach(GTK_GRID(app_data->setup_grid), app_data->name_entry, 1, 0, 1, 1);
     gtk_grid_attach(GTK_GRID(app_data->setup_grid), gtk_label_new("Watts:"), 0, 1, 1, 1);
     gtk_grid_attach(GTK_GRID(app_data->setup_grid), app_data->power_entry, 1, 1, 1, 1);
