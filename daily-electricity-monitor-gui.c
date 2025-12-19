@@ -199,7 +199,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     gtk_grid_set_column_spacing(GTK_GRID(app_data->usage_grid), 10);
     app_data->duration_entry = gtk_entry_new();
     btn_log_2 = gtk_button_new_with_label("Log Hours");
-    gtk_grid_attach(GTK_GRID(app_data->usage_grid), gtk_label_new("Duration:"), 0, 0, 1, 1);
+    gtk_grid_attach(GTK_GRID(app_data->usage_grid), gtk_label_new("Duration (in hours):"), 0, 0, 1, 1); 
     gtk_grid_attach(GTK_GRID(app_data->usage_grid), app_data->duration_entry, 1, 0, 1, 1);
     gtk_grid_attach(GTK_GRID(app_data->usage_grid), btn_log_2, 2, 0, 1, 1);
     gtk_widget_set_sensitive(app_data->usage_grid, FALSE);
